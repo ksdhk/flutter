@@ -19,13 +19,9 @@ class MyApp extends StatelessWidget {
   }
 }
 
-class MyHomePage extends StatefulWidget {
- @override
-  _MyHomePageState createState() => _MyHomePageState();
-}
 
 
-class _MyHomePageState extends State<MyHomePage>{
+class MyHomePage extends StatelessWidget{
   var _text = "Hello";
 
   @override
@@ -34,20 +30,34 @@ class _MyHomePageState extends State<MyHomePage>{
       appBar : AppBar(
           title:Text('Hello World'),
       ),
-      body: Text(
-       _text,
-        style: TextStyle(fontSize:40),
+      body:
+          Column(
+      children:<Widget>[
+      Container(
+        color: Colors.red,
+        width:100,
+        height:100,
+        padding: const EdgeInsets.all(8.0),
+        margin: const EdgeInsets.all(8.0),
       ),
-      floatingActionButton: FloatingActionButton(
-        onPressed:() {
-          setState((){
-            _text = 'World';
-          });
-        },
-        child : Icon(Icons.touch_app),
-      ),
-
+        Container(
+          color: Colors.green,
+          width:100,
+          height:100,
+          padding: const EdgeInsets.all(8.0),
+          margin: const EdgeInsets.all(8.0),
+        ),
+        Container(
+          color: Colors.blue,
+          width:100,
+          height:100,
+          padding: const EdgeInsets.all(8.0),
+          margin: const EdgeInsets.all(8.0),
+        ),
+    ],
+          )
     );
+
   }
 
 }
