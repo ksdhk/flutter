@@ -31,7 +31,7 @@ class MyHomePage extends StatelessWidget{
           title:Text('Hello World'),
       ),
       body:
-          Column(
+          Stack(
       children:<Widget>[
       Container(
         color: Colors.red,
@@ -42,15 +42,15 @@ class MyHomePage extends StatelessWidget{
       ),
         Container(
           color: Colors.green,
-          width:100,
-          height:100,
+          width:80,
+          height:80,
           padding: const EdgeInsets.all(8.0),
           margin: const EdgeInsets.all(8.0),
         ),
         Container(
           color: Colors.blue,
-          width:100,
-          height:100,
+          width:60,
+          height:60,
           padding: const EdgeInsets.all(8.0),
           margin: const EdgeInsets.all(8.0),
         ),
