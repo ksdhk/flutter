@@ -19,8 +19,6 @@ class MyApp extends StatelessWidget {
   }
 }
 
-
-
 class MyHomePage extends StatelessWidget{
   var _text = "Hello";
 
@@ -28,24 +26,11 @@ class MyHomePage extends StatelessWidget{
   Widget build(BuildContext context){
     return  Scaffold(
       appBar : AppBar(
-          title:Text('Hello World'),
+          title: Text('Hello World'),
       ),
       body:
 
-PageView(
-  children:<Widget>[
-    Container(
-     color:Colors.red,
-    )
-   , Container(
-      color:Colors.green,
-    )
-   , Container(
-      color:Colors.blue,
-    )
-  ]
-)
-
+      Image.network('http://bit.ly/2Pvz4t8')
 
     );
 
