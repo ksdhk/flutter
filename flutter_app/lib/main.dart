@@ -30,7 +30,13 @@ class MyHomePage extends StatelessWidget{
       ),
       body:
 
-      Image.network('http://bit.ly/2Pvz4t8')
+          
+        TextField(
+          decoration:InputDecoration(
+            border:OutlineInputBorder(),
+            labelText:'여기에 입력하세요'
+          ),
+        ),
 
     );
 
