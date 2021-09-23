@@ -21,7 +21,7 @@ class MyApp extends StatelessWidget {
 
 class MyHomePage extends StatelessWidget{
   var _text = "Hello";
-
+  var _isChecked = false;
   @override
   Widget build(BuildContext context){
     return  Scaffold(
@@ -30,13 +30,29 @@ class MyHomePage extends StatelessWidget{
       ),
       body:
 
-          
-        TextField(
-          decoration:InputDecoration(
-            border:OutlineInputBorder(),
-            labelText:'여기에 입력하세요'
+      Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children:<Widget>[
+          GestureDetector(
+            onTap:(){
+              print("GestureDetector 클릭!!");
+            },
+            child : Text('클릭 me!!'),
           ),
-        ),
+          SizedBox(
+            height: 40,
+          ),
+          InkWell(
+            onTap:(){
+              print('InkWell 클릭!!');
+            },
+            child:Text('클릭 Me!!'),
+          )
+        ]
+      ) ,
+
+
+
 
     );
 
