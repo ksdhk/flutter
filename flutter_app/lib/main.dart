@@ -29,7 +29,13 @@ class FirstPage extends StatelessWidget{
     ),
     body: RaisedButton(
       child:Text('다음페이지로'),
-      onPressed:(){},
+      onPressed:(){
+        Navigator.push(
+          context,
+          MaterialPageRoute(builder:(context)=> SecondPage()),
+        );
+
+      },
     ),
   );
   }
