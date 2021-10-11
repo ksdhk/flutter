@@ -37,9 +37,10 @@ class FirstPage extends StatelessWidget{
     body: RaisedButton(
       child:Text('다음페이지로'),
       onPressed:(){
+        final person = Person('홍길동',20);
         Navigator.push(
           context,
-          MaterialPageRoute(builder:(context)=> SecondPage()),
+          MaterialPageRoute(builder:(context)=> SecondPage(person:person)),
         );
 
       },
@@ -50,6 +51,9 @@ class FirstPage extends StatelessWidget{
 }
 
 class SecondPage extends StatelessWidget{
+  final Person person;
+
+  SecondPage({@required this.person});
 
   @override
   Widget build(BuildContext context) {
