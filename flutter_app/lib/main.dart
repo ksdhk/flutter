@@ -27,7 +27,11 @@ class MyApp extends StatelessWidget{
    Widget build(BuildContext conext){
      return Scaffold(
        appBar: AppBar(
-         title:Text('복잡한 UI'),
+         backgroundColor : Colors.white,
+         title:Text('복잡한 UI',
+         style:TextStyle(color:Colors.black),
+         ),
+         centerTitle:true,
        ),
        body: Center(
          child: Text(
