@@ -31,6 +31,15 @@ class MyApp extends StatelessWidget{
          title:Text('복잡한 UI',
          style:TextStyle(color:Colors.black),
          ),
+         actions:<Widget>[
+           IconButton(
+             icon: Icon(
+               Icons.add,
+               color: Colors.black,
+             ),
+             onPressed:(){},
+           ),
+         ],
          centerTitle:true,
        ),
        body: Center(
