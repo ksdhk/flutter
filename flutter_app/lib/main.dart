@@ -14,7 +14,7 @@ class _MyAppState extends State<MyApp> {
     return MaterialApp(title: "BbongFlix",
     theme: ThemeData(brightness: Brightness.dark,
                      primaryColor: Colors.black,
-                    accentColor: Colors.white,
+                     accentColor: Colors.white,
     ),
     home: DefaultTabController(length:4,child: Scaffold
       (body: TabBarView(physics: NeverScrollableScrollPhysics(),children: <Widget> [
